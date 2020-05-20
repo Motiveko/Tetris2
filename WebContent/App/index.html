@@ -7,40 +7,45 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tetris</title>
 
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="./style.css">
 
 
 </head>
 
 <body>
 
+
+
 	<div id="tetris">
-
 		<div id="menu">
-			<p id="start">Press Space to Play</p>
-			<p id="upcoming_wrap" class="wrap">
-				<canvas id="upcoming"> </canvas>
-			</p>
-			<p id="score_wrap" class="wrap">
-				score
-				<span id="score">00000</span>
-			</p> 
-			<p id="score_wrap" class="wrap">
-				rows
-				<span id="rows">0</span>
-			</p>
-		</div>
-      
-		
-		<canvas id="canvas"> </canvas>
-	
+			<p id="start"><a href="javascript:play();">Press Space to Play.</a></p>
 
+			<p class='canvas'>
+				UPCOMING
+				<canvas id="upcoming"></canvas>
+			</p>
+			<p class='canvas'>
+				STORED
+				<canvas id="storing"></canvas>
+			</p>
+
+			<p>score <span id="score">00000</span></p>
+			<p>rows <span id="rows">0</span></p>
+		</div>
+		<canvas id="canvas">
+			Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+		</canvas>
 	</div>
 
+
+
+
+
 	<!-- ============== JAVASCRIPT ==============-->
-	<script src="./app.js"></script>
+	<script src="./app.js"></script> 
 	<script>
-		window.addEventListener('load', function(){
+		window.addEventListener('load', function () {
+			console.log('load');
 
 		})
 	</script>
