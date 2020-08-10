@@ -1,4 +1,4 @@
-# Tetris
+# Tetriz
 
 HTML, CSS, JS 를 이용한 테트리스입니다.
 
